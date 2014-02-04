@@ -1,0 +1,13 @@
+<form class="form-signin" method="post">
+    <label>Informe um número</label>
+    <input type="number" name="numero" class="input-group">
+    <br>
+    <input type="submit" class="btn btn-primary" value="Enviar">
+</form>
+<br>
+<br>
+<?php if ($this->mixResultado) : ?>
+<div class="row">
+    <strong>Resultado e: </strong><?php echo $this->mixResultado; ?>
+</div>
+<?php endif; ?>
