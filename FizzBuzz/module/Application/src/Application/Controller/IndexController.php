@@ -16,6 +16,8 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
+        $a = 12;
+        $c = $a + 1;
         return new ViewModel();
     }
 }

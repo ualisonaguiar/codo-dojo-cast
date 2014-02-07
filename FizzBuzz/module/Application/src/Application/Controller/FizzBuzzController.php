@@ -13,8 +13,9 @@ class FizzBuzzController extends AbstractActionController
         if ($this->getRequest()->isPost()) {
             $arrDadosPost = $this->getRequest()->getPost()->toArray();
             $mixCondicao = $this->getServiceLocator()->get('Application\Service\FizzBuzz')
-                ->verificarFizzBuzz($arrDadosPost['numero']);    
+                ->verificarFizzBuzz($arrDadosPost['numero']);
         }
+
         return new ViewModel(
             array(
                 'mixResultado' => $mixCondicao
